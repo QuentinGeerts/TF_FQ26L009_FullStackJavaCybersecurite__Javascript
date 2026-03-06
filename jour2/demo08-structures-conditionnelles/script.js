@@ -40,3 +40,22 @@ switch (value) {
     console.log("Choix inconnu");
     break;
 }
+
+// 3.  Nullish coalescing
+// ?? : permet de de prendre la valeur à gauche s'il y a une valeur
+//    prend la valeur à droite en cas d'absence de valeur
+
+// const student = {
+//   lastname: "Geerts",
+//   firstname: 'Quentin',
+//   yearResult: 12
+// };
+
+const student = null;
+
+// ?.: opérateur de chaînage optionnel
+// Permet de récupérer la valeur d'une propriété si l'objet n'est pas null
+// Dans le cas où l'objet est null, l'instruction est ignorée
+const result = student?.yearResult ?? 10;
+
+console.log('result :>> ', result);
